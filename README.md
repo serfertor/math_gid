@@ -41,7 +41,7 @@ $ adb shell am start -n com.example.math_gid/.MainActivity
 ## Разработка
 
 ### Требования
-Для установки и запуска проекта, необходим [AndroidSDK](https://developer.android.com/studio/releases/platform-tools#downloads) 24+.
+Для установки и запуска проекта необходим [AndroidSDK](https://developer.android.com/studio/releases/platform-tools#downloads) 24+.
 
 ### Открытие в Android Studio 
 
