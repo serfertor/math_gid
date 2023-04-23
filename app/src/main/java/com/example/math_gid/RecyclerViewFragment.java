@@ -38,6 +38,7 @@ public class RecyclerViewFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_recycler_view, container, false);
 
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.list);
+        recyclerView.addItemDecoration(new ListItemDecoration(100));
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         String[] enter = getResources().getStringArray(R.array.list);
         ArrayList <String> items = new ArrayList<>(Arrays.asList(enter));

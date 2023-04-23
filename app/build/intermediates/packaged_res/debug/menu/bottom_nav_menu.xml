@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/navigation_search"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24"/>
+    <item
+        android:id="@+id/navigation_book"
+        android:title="Book"
+        android:icon="@drawable/baseline_library_books_24"/>
+    <item
+        android:id="@+id/navigation_calculate"
+        android:title="Calculate"
+        android:icon="@drawable/baseline_calculate_24"/>
+</menu>
