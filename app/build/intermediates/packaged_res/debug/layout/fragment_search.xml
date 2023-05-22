@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_grey"
-    tools:context=".SearchFragment">
+    android:background="@color/black"
+    android:padding="@dimen/spacing_big"
+    tools:context=".ui.fragment.SearchFragment">
 
     <EditText
         android:id="@+id/searchEditTextView"
-        android:layout_width="290dp"
-        android:layout_height="80dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_marginTop="50sp"
+        android:background="@drawable/rounded_element"
         android:hint="Введите текст"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -27,6 +28,7 @@
         android:layout_height="50sp"
         android:layout_marginTop="30sp"
         android:text="Найти"
+        android:background="@drawable/rounded_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchEditTextView" />

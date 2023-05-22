@@ -7,12 +7,14 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.math_gid.MainFragment"
+        android:name="com.example.math_gid.ui.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainActivityFragment_to_recyclerViewFragment"
-            app:destination="@id/navigation_book" />
+            app:destination="@id/navigation_book"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_mainActivityFragment_to_searchFragment"
             app:destination="@id/navigation_search" />
@@ -22,16 +24,25 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_book"
-        android:name="com.example.math_gid.RecyclerViewFragment"
-        android:label="RecyclerViewFragment" />
+        android:name="com.example.math_gid.ui.fragment.RecyclerViewFragment"
+        android:label="RecyclerViewFragment" >
+        <action
+            android:id="@+id/action_navigation_book_to_resultRecyclerFragment"
+            app:destination="@id/resultRecyclerFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.example.math_gid.SearchFragment"
+        android:name="com.example.math_gid.ui.fragment.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/navigation_calculate"
-        android:name="com.example.math_gid.CalculateFragment"
+        android:name="com.example.math_gid.ui.fragment.CalculateFragment"
         android:label="fragment_calculate"
         tools:layout="@layout/fragment_calculate" />
+    <fragment
+        android:id="@+id/resultRecyclerFragment"
+        android:name="com.example.math_gid.ui.fragment.ResultRecyclerFragment"
+        android:label="fragment_result_recycler"
+        tools:layout="@layout/fragment_result_recycler" />
 </navigation>
