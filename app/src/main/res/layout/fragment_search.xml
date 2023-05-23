@@ -8,19 +8,31 @@
     android:padding="@dimen/spacing_big"
     tools:context=".ui.fragment.SearchFragment">
 
+    <TextView
+        android:id="@+id/textViewSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/element_margin"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Поиск"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/searchEditTextView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/rounded_element"
-        android:hint="Введите текст"
+        android:hint="Поиск статьи"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSearch" />
 
     <Button
         android:id="@+id/searchButton"
@@ -28,7 +40,7 @@
         android:layout_height="50sp"
         android:layout_marginTop="30sp"
         android:text="Найти"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/rounded_element"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchEditTextView" />
