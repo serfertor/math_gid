@@ -42,7 +42,7 @@ public class RecyclerViewFragment extends Fragment {
         CustomRecyclerAdapter.OnStateClickListener stateClickListener = new CustomRecyclerAdapter.OnStateClickListener() {
             @Override
             public void onStateClick(String state, int position) {
-                rvViewModel.setMove(String.valueOf(position-1));
+                rvViewModel.setMove(String.valueOf(position));
                 Navigation.findNavController(rootView).navigate(R.id.action_navigation_book_to_resultRecyclerFragment);
             }
         };

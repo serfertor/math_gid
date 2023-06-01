@@ -7,10 +7,10 @@
     <string name="searchText">Найти</string>
     <string name="emptySearch">Пустой поиск</string>
     <string-array name="list">
-        <item>Теорема Фирма</item>
+        <item>Теорема Ферма</item>
         <item>Теорема Виета</item>
         <item>Закон Ньютона</item>
-        <item>4</item>
+        <item>Биномиальная теорема</item>
         <item>5</item>
         <item>6</item>
         <item>7</item>

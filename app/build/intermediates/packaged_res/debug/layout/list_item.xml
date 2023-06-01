@@ -31,10 +31,13 @@
         android:text="Some long title"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:singleLine="false"
+        android:maxLines="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toEndOf="@+id/poster"
         app:layout_constraintTop_toTopOf="@+id/poster"
-        app:layout_constraintVertical_bias="0.503" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

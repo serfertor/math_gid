@@ -30,6 +30,10 @@ dimen spacing_medium
 dimen spacing_small
 dimen text_size
 dimen vertical_margin
+drawable a0
+drawable a1
+drawable a2
+drawable a3
 drawable baseline_calculate_24
 drawable baseline_home_24
 drawable baseline_insert_photo_24
@@ -70,6 +74,7 @@ id btn_pow
 id btn_sqrt
 id fragmentContainerView
 id imageView
+id imageresult
 id input_user
 id list
 id nameTextView
@@ -86,6 +91,7 @@ id searchEditTextView
 id sign_user
 id textView
 id textViewBook
+id textViewSearch
 layout activity_main
 layout fragment_calculate
 layout fragment_main
